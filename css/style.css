@@ -329,3 +329,37 @@ justify-self: center;
 .vr__text {
 	margin-top: 10px;
 }
+
+.box{
+	padding-top: 100px;
+}
+.box__inner {
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: 1fr 50%;
+	gap: 20px;
+}
+.mini-box__img {
+	display: grid;
+	grid-template-columns: 1fr 50%;
+	height: 100%;
+	align-items: start;
+}
+.mini-box__img > img{
+	height: 220px;
+}
+.box__img-3{
+	margin-top: 170px;
+	height: 220px;
+}
+.box-title{
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 36px;
+}
+.box__img-2{
+	margin-top: 32px;
+}
+.mini-box__img > div{
+	gap: 32px;
+}
