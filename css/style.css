@@ -307,29 +307,44 @@ justify-self: center;
 .oculus {
 	margin-bottom: 110px;
 }
-.vr {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.vr{
+	margin-bottom: 100px;
+	position: relative;
+	text-align: center;
+	overflow-x: hidden;
 }
-.vr-img {
-	width: 346.68px;
-	height: 334px;
-	margin-bottom: 30px;
+
+.buy__bg{
+	font-weight: 700;
+	font-size: 400px;
+	line-height: 330px;
+	background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	opacity: 0.1;
+	text-transform: uppercase;
+	position: absolute;
+	z-index: -1;
+	animation: move 6s linear 1s infinite;
 }
-.bg-img{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 1220px;
-	max-width: 100%;
-	background: url(/img/vr-bg.svg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position:center;
+
+@keyframes move {
+	from{
+		transform: translateX(115%);
+		transform-origin: left center;
+	}
+	to{
+		transform: translateX(-115%);
+		transform-origin: right center;
+	}
 }
+
 .vr__text {
 	margin-top: 10px;
+}
+
+.vr > .buy-btn{
+	margin: 0 auto;
 }
 
 .box{
