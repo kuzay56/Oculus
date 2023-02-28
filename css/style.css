@@ -219,6 +219,7 @@ justify-self: center;
 .tabs__content-img{
 	grid-row: 1/-1;
 	align-self: stretch;
+	object-fit: cover;
 }
 
 .video {
@@ -534,4 +535,35 @@ justify-self: center;
 	display: flex;
 	gap: 20px;
 	justify-self: end;
+}
+
+@media (max-width:992px)  {
+	
+}
+
+@media(max-width:768px){
+	.title_top{
+		font-size: 66px;
+	}
+	.sub-title{
+		font-size: 24px;
+	}
+}
+@media(max-width:568px){
+	.buy-btn{
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.top{
+		text-align: center;
+	}
+}
+
+@media(max-width:420px){
+	.title_top{
+		font-size: 36px;
+	}
+	.sub-title{
+		font-size: 20px;
+	}
 }
